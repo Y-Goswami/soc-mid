@@ -1,0 +1,36 @@
+header{
+
+    background-color: purple;
+    color: black;
+    font-size: 40px;
+    // block-size: 10px;
+    display: inline-block;
+    width: 100%;
+    ul{
+        color: burlywood;
+        list-style-type: none;
+            // margin-bottom: 100%;
+            // position: ;
+            display: contents;
+
+        button{
+            background-color:yellow;
+            border:2px solid purple;
+            color:blue;
+            text-align: center;
+            // display: inline-block;
+
+            padding: 5px 10px;
+            font-size: medium;
+            border-radius: 0%;
+            // border-width: 5px;
+            width: 15%;
+            margin-left: 80%;
+            margin-right: auto;
+            float: right;
+
+            
+        }
+
+    }
+}
