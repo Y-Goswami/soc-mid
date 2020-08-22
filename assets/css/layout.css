@@ -1,5 +1,9 @@
 body {
   margin: 0;
-  /* text-align: center; */ }
-  body #layout-main {
-    height: 100%; }
+  /* text-align: center; */
+  position: static; }
+  body main {
+    height: fit-content; }
+    body main section {
+      margin-top: 120px;
+      margin-bottom: 80px; }

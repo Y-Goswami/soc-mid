@@ -6,6 +6,8 @@ header{
     // block-size: 10px;
     display: inline-block;
     width: 100%;
+    position: fixed;
+    height: 120px;
     ul{
         color: burlywood;
         list-style-type: none;
@@ -28,6 +30,7 @@ header{
             margin-left: 80%;
             margin-right: auto;
             float: right;
+            // margin-top: 0%;
 
             
         }
