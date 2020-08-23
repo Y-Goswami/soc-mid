@@ -4,7 +4,6 @@ header {
   font-size: 40px;
   display: inline-block;
   width: 100%;
-  position: fixed;
   height: 120px; }
   header ul {
     color: burlywood;
@@ -21,5 +20,4 @@ header {
       width: 15%;
       margin-left: 80%;
       margin-right: auto;
-      float: right;
-      margin-top: 0%; }
+      float: right; }

@@ -1,9 +1,5 @@
 body {
   margin: 0;
   /* text-align: center; */
-  position: static; }
-  body main {
-    height: fit-content; }
-    body main section {
-      margin-top: 120px;
-      margin-bottom: 80px; }
+  position: relative;
+  padding-bottom: 80px; }
