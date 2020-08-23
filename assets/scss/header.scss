@@ -1,48 +1,101 @@
 header{
-
+    display: flex;
     background-color: purple;
-    color: black;
-    font-size: 40px;
-    // block-size: 10px;
-    display: inline-block;
-    width: 100%;
-    // position: fixed;
     height: 120px;
-    button{
-        background-color: purple;
-        border: none;
-        color: black;
-        text-align: center;
+
+    #website-name{
+        color: yellow;
         font-size: 40px;
+        width: 80%;
+        margin: 5px;
+        padding: 0%;
+        // position: fixed;
+        // height: 120px;
+        button{
+            background-color: purple;
+            border: none;
+            color:yellow;
+            text-align: center;
+            font-size: 40px;
 
 
+        }
     }
-    ul{
-        color: burlywood;
+    #website-menu{
+        // color: burlywood;
         list-style-type: none;
             // margin-bottom: 100%;
             // position: ;
-            display: contents;
+            // display: contents;
+            margin: 5px;
 
         button{
             background-color:yellow;
             border:2px solid purple;
             color:blue;
             text-align: center;
-            // display: inline-block;
-
-            padding: 5px 10px;
+            display: inline-block;
+            // justify-content: space-around;
+            padding: 5px 50px;
             font-size: medium;
             border-radius: 0%;
             // border-width: 5px;
-            width: 15%;
-            margin-left: 80%;
+            width: 100%;
+            height: auto;
+            // margin-left: 80%;
             margin-right: auto;
-            float: right;
-            // margin-top: 0%;
+            // float: right;
+            margin-top: 0%;
 
             
         }
-
     }
+
+
+
+    // background-color: purple;
+    // color: black;
+    // font-size: 40px;
+    // // block-size: 10px;
+    // display: inline-block;
+    // width: 100%;
+    // // position: fixed;
+    // height: 120px;
+    // button{
+    //     background-color: purple;
+    //     border: none;
+    //     color: black;
+    //     text-align: center;
+    //     font-size: 40px;
+
+
+    // }
+    // ul{
+    //     color: burlywood;
+    //     list-style-type: none;
+    //         // margin-bottom: 100%;
+    //         // position: ;
+    //         display: contents;
+
+    //     button{
+    //         background-color:yellow;
+    //         border:2px solid purple;
+    //         color:blue;
+    //         text-align: center;
+    //         // display: inline-block;
+
+    //         padding: 5px 10px;
+    //         font-size: medium;
+    //         border-radius: 0%;
+    //         // border-width: 5px;
+    //         width: 15%;
+    //         margin-left: 80%;
+    //         margin-right: auto;
+    //         float: right;
+    //         // margin-top: 0%;
+
+            
+    //     }
+
+    // }
 }

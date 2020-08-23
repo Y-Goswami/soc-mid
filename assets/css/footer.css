@@ -1,9 +1,13 @@
 footer {
   background-color: purple;
-  color: black;
+  color: yellow;
   font-size: 20px;
   height: 80px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+  footer li {
+    padding: 15px 0px;
+    list-style-type: none; }

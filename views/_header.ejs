@@ -1,12 +1,15 @@
 <header>
     <!-- Codeial -->
-    <a href="/">
-        <button>
-            Codeial
-        </button>
-    </a>
+    <ul id="website-name">
+        <a href="/" >
+            <button>
+                Codeial
+            </button>
+        </a>
+    </ul>
+    
 
-    <ul>
+    <ul id="website-menu">
         <% if (locals.user){ %>
             <li>
                 <a href="/users/profile/<%= locals.user.id %>">

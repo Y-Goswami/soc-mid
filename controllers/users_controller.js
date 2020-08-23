@@ -1,6 +1,9 @@
 
 const User = require('../models/user'); 
-const { response } = require('express');
+// const { response } = require('express');
+
+// here Async Await is not used
+
 
 module.exports.profile = function(req,res){
     User.findById(req.params.id,function(err,user){
@@ -66,12 +69,15 @@ module.exports.create = function(req, res){
 
 //sign in and a create a session for the user
 module.exports.createSession = function(req,res){
+    req.flash('success','Logged in Sucessfully');
     return res.redirect('/');
+
 }
 
 
 //sign out
 module.exports.destroySession = function(req,res){
     req.logout();
+    req.flash('success','You have logged out');
     return res.redirect('/');
 }
