@@ -23,6 +23,8 @@ module.exports.update = function(req,res){
     }
     else{
         res.status(401).send('Unauthorized');
+        return res.status(401).send('Unauthorized');
+
     }
 }
 
@@ -50,18 +52,20 @@ module.exports.signIn = function(req,res){
 //get the sign up data
 module.exports.create = function(req, res){
     if (req.body.password != req.body.confirm_password){
+        req.flash('error', 'Passwords do not match');
         return res.redirect('back');
     }
 
     User.findOne({email: req.body.email},function(err, user){
-        if(err){console.log('error in finding user in signing up'); return}
+        if(err){req.flash('error', err); return}
         if(!user){
             User.create(req.body, function(err,user){
-                if(err){console.log('error in finding user while signing up'); return}
+                if(err){req.flash('error', err); return}
                 // console.log('user created');
                 return res.redirect('/users/sign-in');
             });
         }else{
+            req.flash('success', 'You have signed up, login to continue!');
             return res.redirect('back');
         }
     });
